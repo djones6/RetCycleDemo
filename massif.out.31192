@@ -1,0 +1,1752 @@
+desc: (none)
+cmd: .build/debug/RetCycleDemo
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=3443318
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=3998091
+mem_heap_B=6328
+mem_heap_extra_B=1048
+mem_stacks_B=0
+heap_tree=detailed
+n6: 6328 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2848 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 2848 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 2144 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 672 0x401225: main (main.swift:29)
+    n0: 672 0x401251: main (main.swift:30)
+    n0: 672 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 704 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 672 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n1: 1536 0x524EB6B: llvm::DenseMapBase<llvm::DenseMap<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >, (anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >::grow(unsigned int) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 1536 0x5247C23: swift_getForeignTypeMetadata (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n1: 1536 0x52505E5: swift::TargetProtocolConformanceRecord<swift::InProcess>::getCanonicalTypeMetadata() const (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n1: 1536 0x5250BC6: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 1536 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 1536 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 1536 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 1536 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 1536 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1536 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+           n1: 1536 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+            n0: 1536 0x40108B: main (main.swift:15)
+ n1: 1256 0x400DF4A: _dl_map_object_deps (dl-deps.c:511)
+  n1: 1256 0x4014B39: dl_open_worker (dl-open.c:272)
+   n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+    n1: 1256 0x4014449: _dl_open (dl-open.c:661)
+     n1: 1256 0x63D8029: dlopen_doit (dlopen.c:66)
+      n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+       n1: 1256 0x63D862B: _dlerror_run (dlerror.c:163)
+        n1: 1256 0x63D80BF: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+         n1: 1256 0x527D69C: iteratePHDRCallback(dl_phdr_info*, unsigned long, void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1256 0x5D2149A: dl_iterate_phdr (dl-iteratephdr.c:76)
+           n1: 1256 0x5FBEA7E: pthread_once (pthread_once.S:103)
+            n1: 1256 0x5250999: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+             n1: 1256 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+              n1: 1256 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+               n1: 1256 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                n1: 1256 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                 n1: 1256 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                  n1: 1256 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                   n1: 1256 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                    n0: 1256 0x40108B: main (main.swift:15)
+ n1: 352 0x52484D6: swift::Lazy<swift::MetadataCache<(anonymous namespace)::GenericCacheEntry> >::defaultInitCallback(void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 352 0x5FBEA7E: pthread_once (pthread_once.S:103)
+   n4: 352 0x5244E88: swift_getGenericMetadata (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n1: 88 0x51416AA: _T0s23_ContiguousArrayStorageCMa (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 88 0x404625A: _T0s27_allocateUninitializedArraySayxG_BptBwlFyp_Tgq5 (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftSwiftOnoneSupport.so)
+      n0: 88 0x400FD1: main (main.swift:15)
+    n1: 88 0x51D2728: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 88 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 88 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 88 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n0: 88 0x40108B: main (main.swift:15)
+    n1: 88 0x50B76C0: _T0s11_StringCoreV12_copyInPlaceySi7newSize_Si0F8CapacitySi15minElementWidthtF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 88 0x5126732: _T0s11_StringCoreV6appendyABFTfq4gXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 88 0x51D2775: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 88 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 88 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 88 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n0: 88 0x40108B: main (main.swift:15)
+    n1: 88 0x50B76E6: _T0s11_StringCoreV12_copyInPlaceySi7newSize_Si0F8CapacitySi15minElementWidthtF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 88 0x5126732: _T0s11_StringCoreV6appendyABFTfq4gXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 88 0x51D2775: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 88 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 88 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 88 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n0: 88 0x40108B: main (main.swift:15)
+ n1: 256 0x52508B0: swift::Lazy<ConformanceState>::defaultInitCallback(void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 256 0x5FBEA7E: pthread_once (pthread_once.S:103)
+   n1: 256 0x5250999: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n1: 256 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 256 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 256 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 256 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 256 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 256 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 256 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+           n0: 256 0x40108B: main (main.swift:15)
+ n0: 80 in 5 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=3
+#-----------
+time=4767543
+mem_heap_B=25272
+mem_heap_extra_B=5784
+mem_stacks_B=0
+heap_tree=detailed
+n5: 25272 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 21792 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 21792 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 16352 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 5408 0x401225: main (main.swift:29)
+    n0: 5408 0x401251: main (main.swift:30)
+    n0: 5408 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 5440 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 5408 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n1: 1536 0x524EB6B: llvm::DenseMapBase<llvm::DenseMap<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >, (anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >::grow(unsigned int) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 1536 0x5247C23: swift_getForeignTypeMetadata (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n1: 1536 0x52505E5: swift::TargetProtocolConformanceRecord<swift::InProcess>::getCanonicalTypeMetadata() const (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n1: 1536 0x5250BC6: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 1536 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 1536 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 1536 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 1536 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 1536 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1536 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+           n1: 1536 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+            n0: 1536 0x40108B: main (main.swift:15)
+ n1: 1256 0x400DF4A: _dl_map_object_deps (dl-deps.c:511)
+  n1: 1256 0x4014B39: dl_open_worker (dl-open.c:272)
+   n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+    n1: 1256 0x4014449: _dl_open (dl-open.c:661)
+     n1: 1256 0x63D8029: dlopen_doit (dlopen.c:66)
+      n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+       n1: 1256 0x63D862B: _dlerror_run (dlerror.c:163)
+        n1: 1256 0x63D80BF: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+         n1: 1256 0x527D69C: iteratePHDRCallback(dl_phdr_info*, unsigned long, void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1256 0x5D2149A: dl_iterate_phdr (dl-iteratephdr.c:76)
+           n1: 1256 0x5FBEA7E: pthread_once (pthread_once.S:103)
+            n1: 1256 0x5250999: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+             n1: 1256 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+              n1: 1256 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+               n1: 1256 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                n1: 1256 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                 n1: 1256 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                  n1: 1256 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                   n1: 1256 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                    n0: 1256 0x40108B: main (main.swift:15)
+ n1: 352 0x52484D6: swift::Lazy<swift::MetadataCache<(anonymous namespace)::GenericCacheEntry> >::defaultInitCallback(void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 352 0x5FBEA7E: pthread_once (pthread_once.S:103)
+   n1: 352 0x5244E88: swift_getGenericMetadata (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n0: 352 in 4 places, all below massif's threshold (01.00%)
+ n0: 336 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=4
+#-----------
+time=5703363
+mem_heap_B=48312
+mem_heap_extra_B=11544
+mem_stacks_B=0
+heap_tree=detailed
+n4: 48312 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 44832 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 44832 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 33632 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 11168 0x401225: main (main.swift:29)
+    n0: 11168 0x401251: main (main.swift:30)
+    n0: 11168 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 11200 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 11168 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n1: 1536 0x524EB6B: llvm::DenseMapBase<llvm::DenseMap<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >, (anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >::grow(unsigned int) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 1536 0x5247C23: swift_getForeignTypeMetadata (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n1: 1536 0x52505E5: swift::TargetProtocolConformanceRecord<swift::InProcess>::getCanonicalTypeMetadata() const (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n1: 1536 0x5250BC6: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 1536 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 1536 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 1536 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 1536 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 1536 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1536 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+           n1: 1536 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+            n0: 1536 0x40108B: main (main.swift:15)
+ n1: 1256 0x400DF4A: _dl_map_object_deps (dl-deps.c:511)
+  n1: 1256 0x4014B39: dl_open_worker (dl-open.c:272)
+   n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+    n1: 1256 0x4014449: _dl_open (dl-open.c:661)
+     n1: 1256 0x63D8029: dlopen_doit (dlopen.c:66)
+      n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+       n1: 1256 0x63D862B: _dlerror_run (dlerror.c:163)
+        n1: 1256 0x63D80BF: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+         n1: 1256 0x527D69C: iteratePHDRCallback(dl_phdr_info*, unsigned long, void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1256 0x5D2149A: dl_iterate_phdr (dl-iteratephdr.c:76)
+           n1: 1256 0x5FBEA7E: pthread_once (pthread_once.S:103)
+            n1: 1256 0x5250999: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+             n1: 1256 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+              n1: 1256 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+               n1: 1256 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                n1: 1256 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                 n1: 1256 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                  n1: 1256 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                   n1: 1256 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                    n0: 1256 0x40108B: main (main.swift:15)
+ n0: 688 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=5
+#-----------
+time=6524805
+mem_heap_B=68536
+mem_heap_extra_B=16600
+mem_stacks_B=0
+heap_tree=detailed
+n4: 68536 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 65056 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 65056 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 48800 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 16224 0x401225: main (main.swift:29)
+    n0: 16224 0x401251: main (main.swift:30)
+    n0: 16224 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 16256 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 16224 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n1: 1536 0x524EB6B: llvm::DenseMapBase<llvm::DenseMap<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >, (anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >::grow(unsigned int) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 1536 0x5247C23: swift_getForeignTypeMetadata (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n1: 1536 0x52505E5: swift::TargetProtocolConformanceRecord<swift::InProcess>::getCanonicalTypeMetadata() const (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n1: 1536 0x5250BC6: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 1536 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 1536 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 1536 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 1536 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 1536 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1536 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+           n1: 1536 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+            n0: 1536 0x40108B: main (main.swift:15)
+ n1: 1256 0x400DF4A: _dl_map_object_deps (dl-deps.c:511)
+  n1: 1256 0x4014B39: dl_open_worker (dl-open.c:272)
+   n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+    n1: 1256 0x4014449: _dl_open (dl-open.c:661)
+     n1: 1256 0x63D8029: dlopen_doit (dlopen.c:66)
+      n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+       n1: 1256 0x63D862B: _dlerror_run (dlerror.c:163)
+        n1: 1256 0x63D80BF: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+         n1: 1256 0x527D69C: iteratePHDRCallback(dl_phdr_info*, unsigned long, void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1256 0x5D2149A: dl_iterate_phdr (dl-iteratephdr.c:76)
+           n1: 1256 0x5FBEA7E: pthread_once (pthread_once.S:103)
+            n1: 1256 0x5250999: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+             n1: 1256 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+              n1: 1256 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+               n1: 1256 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                n1: 1256 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                 n1: 1256 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                  n1: 1256 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                   n1: 1256 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                    n0: 1256 0x40108B: main (main.swift:15)
+ n0: 688 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=6
+#-----------
+time=7658187
+mem_heap_B=96440
+mem_heap_extra_B=23576
+mem_stacks_B=0
+heap_tree=detailed
+n4: 96440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 92960 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 92960 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 69728 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 23200 0x401225: main (main.swift:29)
+    n0: 23200 0x401251: main (main.swift:30)
+    n0: 23200 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 23232 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 23200 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n1: 1536 0x524EB6B: llvm::DenseMapBase<llvm::DenseMap<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >, (anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*, llvm::DenseMapInfo<(anonymous namespace)::GlobalString>, llvm::detail::DenseMapPair<(anonymous namespace)::GlobalString, swift::TargetForeignTypeMetadata<swift::InProcess> const*> >::grow(unsigned int) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n1: 1536 0x5247C23: swift_getForeignTypeMetadata (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n1: 1536 0x52505E5: swift::TargetProtocolConformanceRecord<swift::InProcess>::getCanonicalTypeMetadata() const (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+    n1: 1536 0x5250BC6: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+     n1: 1536 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+      n1: 1536 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+       n1: 1536 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+        n1: 1536 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+         n1: 1536 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1536 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+           n1: 1536 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+            n0: 1536 0x40108B: main (main.swift:15)
+ n1: 1256 0x400DF4A: _dl_map_object_deps (dl-deps.c:511)
+  n1: 1256 0x4014B39: dl_open_worker (dl-open.c:272)
+   n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+    n1: 1256 0x4014449: _dl_open (dl-open.c:661)
+     n1: 1256 0x63D8029: dlopen_doit (dlopen.c:66)
+      n1: 1256 0x4010092: _dl_catch_error (dl-error.c:187)
+       n1: 1256 0x63D862B: _dlerror_run (dlerror.c:163)
+        n1: 1256 0x63D80BF: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+         n1: 1256 0x527D69C: iteratePHDRCallback(dl_phdr_info*, unsigned long, void*) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+          n1: 1256 0x5D2149A: dl_iterate_phdr (dl-iteratephdr.c:76)
+           n1: 1256 0x5FBEA7E: pthread_once (pthread_once.S:103)
+            n1: 1256 0x5250999: swift_conformsToProtocol (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+             n1: 1256 0x523EC9C: _conformsToProtocols(swift::OpaqueValue const*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::WitnessTable const**) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+              n1: 1256 0x523E0B2: _dynamicCastToExistential(swift::OpaqueValue*, swift::OpaqueValue*, swift::TargetMetadata<swift::InProcess> const*, swift::TargetExistentialTypeMetadata<swift::InProcess> const*, swift::DynamicCastFlags) (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+               n1: 1256 0x515508E: _T0s15_print_unlockedyx_q_zts16TextOutputStreamR_r0_lFTfq4gn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                n1: 1256 0x51D24EA: _T0s6_printySayypG_SS9separatorSS10terminatorxz2tots16TextOutputStreamRzlFs04_TeeG0VySSs7_StdoutVG_Tgq5Tfq4ggXgXn_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                 n1: 1256 0x51D3041: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_nTm (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                  n1: 1256 0x51D286B: _T0s5printySayypGd_SS9separatorSS10terminatortFTfq4ggXgX_n (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                   n1: 1256 0x5055B6B: _T0s5printySayypGd_SS9separatorSS10terminatortF (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+                    n0: 1256 0x40108B: main (main.swift:15)
+ n0: 688 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=7
+#-----------
+time=8775972
+mem_heap_B=123960
+mem_heap_extra_B=30456
+mem_stacks_B=0
+heap_tree=detailed
+n2: 123960 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 120480 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 120480 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 90368 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 30080 0x401225: main (main.swift:29)
+    n0: 30080 0x401251: main (main.swift:30)
+    n0: 30080 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 30112 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 30080 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=8
+#-----------
+time=9498633
+mem_heap_B=141752
+mem_heap_extra_B=34904
+mem_stacks_B=0
+heap_tree=detailed
+n2: 141752 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 138272 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 138272 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 103712 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 34528 0x401225: main (main.swift:29)
+    n0: 34528 0x401251: main (main.swift:30)
+    n0: 34528 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 34560 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 34528 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=9
+#-----------
+time=10538433
+mem_heap_B=167352
+mem_heap_extra_B=41304
+mem_stacks_B=0
+heap_tree=detailed
+n2: 167352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 163872 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 163872 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 122912 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 40928 0x401225: main (main.swift:29)
+    n0: 40928 0x401251: main (main.swift:30)
+    n0: 40928 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 40960 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 40928 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=10
+#-----------
+time=11760198
+mem_heap_B=197432
+mem_heap_extra_B=48824
+mem_stacks_B=0
+heap_tree=detailed
+n2: 197432 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 193952 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 193952 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 145472 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 48448 0x401225: main (main.swift:29)
+    n0: 48448 0x401251: main (main.swift:30)
+    n0: 48448 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 48480 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 48448 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=11
+#-----------
+time=12716814
+mem_heap_B=220984
+mem_heap_extra_B=54712
+mem_stacks_B=0
+heap_tree=detailed
+n2: 220984 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 217504 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 217504 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 163136 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 54336 0x401225: main (main.swift:29)
+    n0: 54336 0x401251: main (main.swift:30)
+    n0: 54336 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 54368 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 54336 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=12
+#-----------
+time=13481067
+mem_heap_B=239800
+mem_heap_extra_B=59416
+mem_stacks_B=0
+heap_tree=detailed
+n2: 239800 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 236320 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 236320 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 177248 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 59040 0x401225: main (main.swift:29)
+    n0: 59040 0x401251: main (main.swift:30)
+    n0: 59040 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 59072 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 59040 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=13
+#-----------
+time=14307708
+mem_heap_B=260152
+mem_heap_extra_B=64504
+mem_stacks_B=0
+heap_tree=detailed
+n2: 260152 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 256672 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 256672 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 192512 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 64128 0x401225: main (main.swift:29)
+    n0: 64128 0x401251: main (main.swift:30)
+    n0: 64128 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 64160 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 64128 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=14
+#-----------
+time=15201936
+mem_heap_B=282168
+mem_heap_extra_B=70008
+mem_stacks_B=0
+heap_tree=detailed
+n2: 282168 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 278688 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 278688 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 209024 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 69632 0x401225: main (main.swift:29)
+    n0: 69632 0x401251: main (main.swift:30)
+    n0: 69632 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 69664 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 69632 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=15
+#-----------
+time=16174149
+mem_heap_B=306104
+mem_heap_extra_B=75992
+mem_stacks_B=0
+heap_tree=detailed
+n2: 306104 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 302624 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 302624 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 226976 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 75616 0x401225: main (main.swift:29)
+    n0: 75616 0x401251: main (main.swift:30)
+    n0: 75616 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 75648 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 75616 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=16
+#-----------
+time=17359521
+mem_heap_B=335288
+mem_heap_extra_B=83288
+mem_stacks_B=0
+heap_tree=detailed
+n2: 335288 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 331808 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 331808 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 248864 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 82912 0x401225: main (main.swift:29)
+    n0: 82912 0x401251: main (main.swift:30)
+    n0: 82912 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 82944 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 82912 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=17
+#-----------
+time=18508500
+mem_heap_B=363576
+mem_heap_extra_B=90360
+mem_stacks_B=0
+heap_tree=detailed
+n2: 363576 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 360096 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 360096 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 270080 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 89984 0x401225: main (main.swift:29)
+    n0: 89984 0x401251: main (main.swift:30)
+    n0: 89984 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 90016 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 89984 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=18
+#-----------
+time=19116783
+mem_heap_B=378552
+mem_heap_extra_B=94104
+mem_stacks_B=0
+heap_tree=detailed
+n2: 378552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 375072 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 375072 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 281312 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 93728 0x401225: main (main.swift:29)
+    n0: 93728 0x401251: main (main.swift:30)
+    n0: 93728 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 93760 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 93728 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=19
+#-----------
+time=19751061
+mem_heap_B=394168
+mem_heap_extra_B=98008
+mem_stacks_B=0
+heap_tree=detailed
+n2: 394168 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 390688 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 390688 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 293024 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 97632 0x401225: main (main.swift:29)
+    n0: 97632 0x401251: main (main.swift:30)
+    n0: 97632 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 97664 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 97632 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=20
+#-----------
+time=20411334
+mem_heap_B=410424
+mem_heap_extra_B=102072
+mem_stacks_B=0
+heap_tree=detailed
+n2: 410424 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 406944 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 406944 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 305216 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 101696 0x401225: main (main.swift:29)
+    n0: 101696 0x401251: main (main.swift:30)
+    n0: 101696 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 101728 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 101696 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=21
+#-----------
+time=21102801
+mem_heap_B=427448
+mem_heap_extra_B=106328
+mem_stacks_B=0
+heap_tree=detailed
+n2: 427448 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 423968 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 423968 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 317984 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 105952 0x401225: main (main.swift:29)
+    n0: 105952 0x401251: main (main.swift:30)
+    n0: 105952 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 105984 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 105952 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=22
+#-----------
+time=21820263
+mem_heap_B=445112
+mem_heap_extra_B=110744
+mem_stacks_B=0
+heap_tree=detailed
+n2: 445112 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 441632 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 441632 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 331232 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 110368 0x401225: main (main.swift:29)
+    n0: 110368 0x401251: main (main.swift:30)
+    n0: 110368 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 110400 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 110368 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=23
+#-----------
+time=22563720
+mem_heap_B=463416
+mem_heap_extra_B=115320
+mem_stacks_B=0
+heap_tree=detailed
+n2: 463416 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 459936 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 459936 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 344960 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 114944 0x401225: main (main.swift:29)
+    n0: 114944 0x401251: main (main.swift:30)
+    n0: 114944 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 114976 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 114944 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=24
+#-----------
+time=23338371
+mem_heap_B=482488
+mem_heap_extra_B=120088
+mem_stacks_B=0
+heap_tree=detailed
+n2: 482488 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 479008 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 479008 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 359264 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 119712 0x401225: main (main.swift:29)
+    n0: 119712 0x401251: main (main.swift:30)
+    n0: 119712 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 119744 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 119712 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=25
+#-----------
+time=24144216
+mem_heap_B=502328
+mem_heap_extra_B=125048
+mem_stacks_B=0
+heap_tree=detailed
+n2: 502328 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 498848 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 498848 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 374144 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 124672 0x401225: main (main.swift:29)
+    n0: 124672 0x401251: main (main.swift:30)
+    n0: 124672 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 124704 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 124672 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=26
+#-----------
+time=24986454
+mem_heap_B=523064
+mem_heap_extra_B=130232
+mem_stacks_B=0
+heap_tree=detailed
+n2: 523064 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 519584 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 519584 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 389696 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 129856 0x401225: main (main.swift:29)
+    n0: 129856 0x401251: main (main.swift:30)
+    n0: 129856 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 129888 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 129856 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=27
+#-----------
+time=25859886
+mem_heap_B=544568
+mem_heap_extra_B=135608
+mem_stacks_B=0
+heap_tree=detailed
+n2: 544568 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 541088 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 541088 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 405824 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 135232 0x401225: main (main.swift:29)
+    n0: 135232 0x401251: main (main.swift:30)
+    n0: 135232 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 135264 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 135232 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=28
+#-----------
+time=26764512
+mem_heap_B=566840
+mem_heap_extra_B=141176
+mem_stacks_B=0
+heap_tree=detailed
+n2: 566840 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 563360 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 563360 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 422528 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 140800 0x401225: main (main.swift:29)
+    n0: 140800 0x401251: main (main.swift:30)
+    n0: 140800 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 140832 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 140800 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=29
+#-----------
+time=27710730
+mem_heap_B=590136
+mem_heap_extra_B=147000
+mem_stacks_B=0
+heap_tree=detailed
+n2: 590136 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 586656 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 586656 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 440000 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 146624 0x401225: main (main.swift:29)
+    n0: 146624 0x401251: main (main.swift:30)
+    n0: 146624 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 146656 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 146624 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=30
+#-----------
+time=28698540
+mem_heap_B=614456
+mem_heap_extra_B=153080
+mem_stacks_B=0
+heap_tree=detailed
+n2: 614456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 610976 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 610976 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 458240 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 152704 0x401225: main (main.swift:29)
+    n0: 152704 0x401251: main (main.swift:30)
+    n0: 152704 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 152736 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 152704 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=31
+#-----------
+time=29717544
+mem_heap_B=639544
+mem_heap_extra_B=159352
+mem_stacks_B=0
+heap_tree=detailed
+n2: 639544 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 636064 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 636064 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 477056 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 158976 0x401225: main (main.swift:29)
+    n0: 158976 0x401251: main (main.swift:30)
+    n0: 158976 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 159008 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 158976 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=32
+#-----------
+time=30778140
+mem_heap_B=665656
+mem_heap_extra_B=165880
+mem_stacks_B=0
+heap_tree=detailed
+n2: 665656 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 662176 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 662176 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 496640 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 165504 0x401225: main (main.swift:29)
+    n0: 165504 0x401251: main (main.swift:30)
+    n0: 165504 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 165536 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 165504 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=33
+#-----------
+time=31885527
+mem_heap_B=692920
+mem_heap_extra_B=172696
+mem_stacks_B=0
+heap_tree=detailed
+n2: 692920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 689440 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 689440 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 517088 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 172320 0x401225: main (main.swift:29)
+    n0: 172320 0x401251: main (main.swift:30)
+    n0: 172320 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 172352 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 172320 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=34
+#-----------
+time=32457417
+mem_heap_B=707000
+mem_heap_extra_B=176216
+mem_stacks_B=0
+heap_tree=detailed
+n2: 707000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 703520 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 703520 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 527648 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 175840 0x401225: main (main.swift:29)
+    n0: 175840 0x401251: main (main.swift:30)
+    n0: 175840 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 175872 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 175840 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=35
+#-----------
+time=33336048
+mem_heap_B=728632
+mem_heap_extra_B=181624
+mem_stacks_B=0
+heap_tree=detailed
+n2: 728632 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 725152 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 725152 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 543872 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 181248 0x401225: main (main.swift:29)
+    n0: 181248 0x401251: main (main.swift:30)
+    n0: 181248 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 181280 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 181248 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=36
+#-----------
+time=34547415
+mem_heap_B=758456
+mem_heap_extra_B=189080
+mem_stacks_B=0
+heap_tree=detailed
+n2: 758456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 754976 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 754976 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 566240 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 188704 0x401225: main (main.swift:29)
+    n0: 188704 0x401251: main (main.swift:30)
+    n0: 188704 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 188736 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 188704 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=37
+#-----------
+time=35171295
+mem_heap_B=773816
+mem_heap_extra_B=192920
+mem_stacks_B=0
+heap_tree=detailed
+n2: 773816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 770336 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 770336 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 577760 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 192544 0x401225: main (main.swift:29)
+    n0: 192544 0x401251: main (main.swift:30)
+    n0: 192544 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 192576 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 192544 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=38
+#-----------
+time=35810772
+mem_heap_B=789560
+mem_heap_extra_B=196856
+mem_stacks_B=0
+heap_tree=detailed
+n2: 789560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 786080 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 786080 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 589568 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 196480 0x401225: main (main.swift:29)
+    n0: 196480 0x401251: main (main.swift:30)
+    n0: 196480 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 196512 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 196480 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=39
+#-----------
+time=36460647
+mem_heap_B=805560
+mem_heap_extra_B=200856
+mem_stacks_B=0
+heap_tree=detailed
+n2: 805560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 802080 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 802080 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 601568 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 200480 0x401225: main (main.swift:29)
+    n0: 200480 0x401251: main (main.swift:30)
+    n0: 200480 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 200512 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 200480 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=40
+#-----------
+time=37120920
+mem_heap_B=821816
+mem_heap_extra_B=204920
+mem_stacks_B=0
+heap_tree=detailed
+n2: 821816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 818336 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 818336 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 613760 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 204544 0x401225: main (main.swift:29)
+    n0: 204544 0x401251: main (main.swift:30)
+    n0: 204544 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 204576 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 204544 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=41
+#-----------
+time=37796790
+mem_heap_B=838456
+mem_heap_extra_B=209080
+mem_stacks_B=0
+heap_tree=detailed
+n2: 838456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 834976 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 834976 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 626240 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 208704 0x401225: main (main.swift:29)
+    n0: 208704 0x401251: main (main.swift:30)
+    n0: 208704 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 208736 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 208704 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=42
+#-----------
+time=38488257
+mem_heap_B=855480
+mem_heap_extra_B=213336
+mem_stacks_B=0
+heap_tree=detailed
+n2: 855480 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 852000 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 852000 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 639008 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 212960 0x401225: main (main.swift:29)
+    n0: 212960 0x401251: main (main.swift:30)
+    n0: 212960 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 212992 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 212960 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=43
+#-----------
+time=39190122
+mem_heap_B=872760
+mem_heap_extra_B=217656
+mem_stacks_B=0
+heap_tree=detailed
+n2: 872760 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 869280 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 869280 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 651968 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 217280 0x401225: main (main.swift:29)
+    n0: 217280 0x401251: main (main.swift:30)
+    n0: 217280 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 217312 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 217280 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=44
+#-----------
+time=39907584
+mem_heap_B=890424
+mem_heap_extra_B=222072
+mem_stacks_B=0
+heap_tree=detailed
+n2: 890424 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 886944 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 886944 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 665216 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 221696 0x401225: main (main.swift:29)
+    n0: 221696 0x401251: main (main.swift:30)
+    n0: 221696 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 221728 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 221696 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=45
+#-----------
+time=40640643
+mem_heap_B=908472
+mem_heap_extra_B=226584
+mem_stacks_B=0
+heap_tree=detailed
+n2: 908472 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 904992 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 904992 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 678752 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 226208 0x401225: main (main.swift:29)
+    n0: 226208 0x401251: main (main.swift:30)
+    n0: 226208 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 226240 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 226208 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=46
+#-----------
+time=41384100
+mem_heap_B=926776
+mem_heap_extra_B=231160
+mem_stacks_B=0
+heap_tree=detailed
+n2: 926776 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 923296 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 923296 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 692480 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 230784 0x401225: main (main.swift:29)
+    n0: 230784 0x401251: main (main.swift:30)
+    n0: 230784 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 230816 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 230784 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=47
+#-----------
+time=42148353
+mem_heap_B=945592
+mem_heap_extra_B=235864
+mem_stacks_B=0
+heap_tree=detailed
+n2: 945592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 942112 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 942112 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 706592 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 235488 0x401225: main (main.swift:29)
+    n0: 235488 0x401251: main (main.swift:30)
+    n0: 235488 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 235520 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 235488 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=48
+#-----------
+time=42923004
+mem_heap_B=964664
+mem_heap_extra_B=240632
+mem_stacks_B=0
+heap_tree=detailed
+n2: 964664 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 961184 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 961184 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 720896 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 240256 0x401225: main (main.swift:29)
+    n0: 240256 0x401251: main (main.swift:30)
+    n0: 240256 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 240288 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 240256 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=49
+#-----------
+time=44118774
+mem_heap_B=994104
+mem_heap_extra_B=247992
+mem_stacks_B=0
+heap_tree=detailed
+n2: 994104 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 990624 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 990624 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 742976 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 247616 0x401225: main (main.swift:29)
+    n0: 247616 0x401251: main (main.swift:30)
+    n0: 247616 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 247648 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 247616 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=50
+#-----------
+time=44524296
+mem_heap_B=1004088
+mem_heap_extra_B=250488
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1004088 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1000608 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1000608 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 750464 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 250112 0x401225: main (main.swift:29)
+    n0: 250112 0x401251: main (main.swift:30)
+    n0: 250112 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 250144 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 250112 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=51
+#-----------
+time=44935017
+mem_heap_B=1014200
+mem_heap_extra_B=253016
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1014200 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1010720 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1010720 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 758048 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 252640 0x401225: main (main.swift:29)
+    n0: 252640 0x401251: main (main.swift:30)
+    n0: 252640 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 252672 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 252640 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=52
+#-----------
+time=45350937
+mem_heap_B=1024440
+mem_heap_extra_B=255576
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1024440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1020960 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1020960 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 765728 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 255200 0x401225: main (main.swift:29)
+    n0: 255200 0x401251: main (main.swift:30)
+    n0: 255200 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 255232 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 255200 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=53
+#-----------
+time=45772056
+mem_heap_B=1034808
+mem_heap_extra_B=258168
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1034808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1031328 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1031328 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 773504 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 257792 0x401225: main (main.swift:29)
+    n0: 257792 0x401251: main (main.swift:30)
+    n0: 257792 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 257824 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 257792 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=54
+#-----------
+time=46193175
+mem_heap_B=1045176
+mem_heap_extra_B=260760
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1045176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1041696 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1041696 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 781280 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 260384 0x401225: main (main.swift:29)
+    n0: 260384 0x401251: main (main.swift:30)
+    n0: 260384 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 260416 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 260384 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=55
+#-----------
+time=46619493
+mem_heap_B=1055672
+mem_heap_extra_B=263384
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1055672 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1052192 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1052192 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 789152 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 263008 0x401225: main (main.swift:29)
+    n0: 263008 0x401251: main (main.swift:30)
+    n0: 263008 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 263040 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 263008 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=56
+#-----------
+time=47051010
+mem_heap_B=1066296
+mem_heap_extra_B=266040
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1066296 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1062816 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1062816 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 797120 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 265664 0x401225: main (main.swift:29)
+    n0: 265664 0x401251: main (main.swift:30)
+    n0: 265664 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 265696 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 265664 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=57
+#-----------
+time=47487726
+mem_heap_B=1077048
+mem_heap_extra_B=268728
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1077048 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1073568 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1073568 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 805184 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 268352 0x401225: main (main.swift:29)
+    n0: 268352 0x401251: main (main.swift:30)
+    n0: 268352 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 268384 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 268352 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=58
+#-----------
+time=47929641
+mem_heap_B=1087928
+mem_heap_extra_B=271448
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1087928 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1084448 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1084448 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 813344 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 271072 0x401225: main (main.swift:29)
+    n0: 271072 0x401251: main (main.swift:30)
+    n0: 271072 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 271104 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 271072 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=59
+#-----------
+time=48371556
+mem_heap_B=1098808
+mem_heap_extra_B=274168
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1098808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1095328 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1095328 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 821504 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 273792 0x401225: main (main.swift:29)
+    n0: 273792 0x401251: main (main.swift:30)
+    n0: 273792 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 273824 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 273792 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=60
+#-----------
+time=48818670
+mem_heap_B=1109816
+mem_heap_extra_B=276920
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1109816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1106336 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1106336 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 829760 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 276544 0x401225: main (main.swift:29)
+    n0: 276544 0x401251: main (main.swift:30)
+    n0: 276544 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 276576 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 276544 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=61
+#-----------
+time=49270983
+mem_heap_B=1120952
+mem_heap_extra_B=279704
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1120952 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1117472 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1117472 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 838112 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 279328 0x401225: main (main.swift:29)
+    n0: 279328 0x401251: main (main.swift:30)
+    n0: 279328 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 279360 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 279328 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=62
+#-----------
+time=49728495
+mem_heap_B=1132216
+mem_heap_extra_B=282520
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1132216 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1128736 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1128736 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 846560 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 282144 0x401225: main (main.swift:29)
+    n0: 282144 0x401251: main (main.swift:30)
+    n0: 282144 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 282176 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 282144 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=63
+#-----------
+time=50191206
+mem_heap_B=1143608
+mem_heap_extra_B=285368
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1143608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1140128 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1140128 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 855104 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 284992 0x401225: main (main.swift:29)
+    n0: 284992 0x401251: main (main.swift:30)
+    n0: 284992 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 285024 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 284992 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=64
+#-----------
+time=50659116
+mem_heap_B=1155128
+mem_heap_extra_B=288248
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1155128 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1151648 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1151648 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 863744 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 287872 0x401225: main (main.swift:29)
+    n0: 287872 0x401251: main (main.swift:30)
+    n0: 287872 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 287904 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 287872 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=65
+#-----------
+time=51132225
+mem_heap_B=1166776
+mem_heap_extra_B=291160
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1166776 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1163296 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1163296 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 872480 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 290784 0x401225: main (main.swift:29)
+    n0: 290784 0x401251: main (main.swift:30)
+    n0: 290784 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 290816 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 290784 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=66
+#-----------
+time=51610533
+mem_heap_B=1178552
+mem_heap_extra_B=294104
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1178552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1175072 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1175072 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 881312 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 293728 0x401225: main (main.swift:29)
+    n0: 293728 0x401251: main (main.swift:30)
+    n0: 293728 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 293760 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 293728 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=67
+#-----------
+time=52094040
+mem_heap_B=1190456
+mem_heap_extra_B=297080
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1190456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1186976 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1186976 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 890240 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 296704 0x401225: main (main.swift:29)
+    n0: 296704 0x401251: main (main.swift:30)
+    n0: 296704 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 296736 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 296704 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=68
+#-----------
+time=52577547
+mem_heap_B=1202360
+mem_heap_extra_B=300056
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1202360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1198880 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1198880 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 899168 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 299680 0x401225: main (main.swift:29)
+    n0: 299680 0x401251: main (main.swift:30)
+    n0: 299680 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 299712 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 299680 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=69
+#-----------
+time=53066253
+mem_heap_B=1214392
+mem_heap_extra_B=303064
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1214392 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1210912 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1210912 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 908192 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 302688 0x401225: main (main.swift:29)
+    n0: 302688 0x401251: main (main.swift:30)
+    n0: 302688 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 302720 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 302688 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=70
+#-----------
+time=53560158
+mem_heap_B=1226552
+mem_heap_extra_B=306104
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1226552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1223072 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1223072 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 917312 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 305728 0x401225: main (main.swift:29)
+    n0: 305728 0x401251: main (main.swift:30)
+    n0: 305728 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 305760 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 305728 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=71
+#-----------
+time=54059262
+mem_heap_B=1238840
+mem_heap_extra_B=309176
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1238840 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1235360 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1235360 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 926528 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 308800 0x401225: main (main.swift:29)
+    n0: 308800 0x401251: main (main.swift:30)
+    n0: 308800 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 308832 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 308800 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=72
+#-----------
+time=54563565
+mem_heap_B=1251256
+mem_heap_extra_B=312280
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1251256 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1247776 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1247776 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 935840 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 311904 0x401225: main (main.swift:29)
+    n0: 311904 0x401251: main (main.swift:30)
+    n0: 311904 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 311936 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 311904 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=73
+#-----------
+time=55073067
+mem_heap_B=1263800
+mem_heap_extra_B=315416
+mem_stacks_B=0
+heap_tree=detailed
+n2: 1263800 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1260320 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1260320 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 945248 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 315040 0x401225: main (main.swift:29)
+    n0: 315040 0x401251: main (main.swift:30)
+    n0: 315040 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 315072 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 315040 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=74
+#-----------
+time=55587768
+mem_heap_B=1276472
+mem_heap_extra_B=318584
+mem_stacks_B=0
+heap_tree=peak
+n2: 1276472 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1272992 0x5240F44: swift_slowAlloc (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+  n3: 1272992 0x5240F7D: _swift_allocObject_ (in /home/djones6/.swiftenv/versions/4.0.3/usr/lib/swift/linux/libswiftCore.so)
+   n4: 954752 0x4016EB: _T012RetCycleDemo5DinerCACSi4seat_ACSg4lefttcfC (main.swift:0)
+    n0: 318208 0x401225: main (main.swift:29)
+    n0: 318208 0x401251: main (main.swift:30)
+    n0: 318208 0x40127D: main (main.swift:31)
+    n0: 128 in 4 places, all below massif's threshold (01.00%)
+   n2: 318240 0x40162E: _T012RetCycleDemo5DinerCACSi4seat_tcfC (main.swift:0)
+    n0: 318208 0x4011F9: main (main.swift:28)
+    n0: 32 in 1 place, below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n0: 3480 in 9 places, all below massif's threshold (01.00%)
